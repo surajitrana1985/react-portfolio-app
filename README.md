@@ -1,4 +1,5 @@
 # react-portfolio-app
+
 This is a portfolio application built with ReactJS using Tailwind CSS
 
 # Getting Started with Create React App
@@ -71,3 +72,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### `npm install -D tailwindcss` to install tailwindcss
+
+Initialize tailwindcss in the application by running: `npx tailwindcss init` which will create `tailwind.config.js` in the root of the application
+
+Add the paths to all of your template files in your tailwind.config.js file
+
+`
+content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+],
+`
+
+Reference 1: https://tailwindcss.com/
+Reference 2: https://tailwindcss.com/docs/guides/create-react-app
+
+Add the Tailwind directives to your CSS
+Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file
+
+`
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+`
